@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "readly24\\basket\\": "src"
+            "readly\\basket\\": "src"
         }
     },
     "support": {
