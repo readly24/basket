@@ -112,6 +112,7 @@ class Basket extends Component
                 ->setQuantity($this->_items[$product->getId()][$modification->getId()]->getQuantity() + $quantity);
             $this->_items[$product->getId()][$modification->getId()]->setModification($modification->getId());
         } else {
+            $product->detachBehaviors();
             $product->setQuantity($quantity);
             $product->setModification($modification->getId());
             $this->_items[$product->getId()][$modification->getId()] = $product;
@@ -155,6 +156,7 @@ class Basket extends Component
         if (isset($this->_items[$product->getId()][$modification->getId()])) {
             $this->_items[$product->getId()][$modification->getId()]->setQuantity($quantity);
         } else {
+            $product->detachBehaviors();
             $product->setQuantity($quantity);
             $this->_items[$product->getId()][$modification->getId()] = $product;
         }

@@ -50,4 +50,10 @@ interface CartProductInterface
      */
     public function getModificationId();
 
+    /**
+     * @return int
+     */
+    public function detachBehaviors();
+
+
 }
