@@ -15,7 +15,11 @@
     },
     "autoload": {
         "psr-4": {
-            "readly\\basket\\": ""
+            "readly24\\basket\\": "src"
         }
-    }
+    },
+    "support": {
+        "issues": "https://github.com/readly24/basket/issues?state=open",
+        "source": "https://github.com/readly24/basket"
+    },
 }
